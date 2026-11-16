@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      APP_ORIGIN: ${APP_ORIGIN:-http://localhost:8000}
+      DB_PATH: /app/var/recalldeck.sqlite
+    volumes:
+      - recall-data:/app/var
+volumes:
+  recall-data:
