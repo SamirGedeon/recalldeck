@@ -1,0 +1,1 @@
+{"extends":"../../tsconfig.json","compilerOptions":{"outDir":"../../dist/web-ts"},"files":["src/main.ts"]}
